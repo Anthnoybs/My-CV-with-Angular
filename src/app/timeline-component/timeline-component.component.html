@@ -1,0 +1,150 @@
+<div class="divider"></div>
+<div class="  panel rounded shadow" *ngIf="bool; else elseBlock">
+    <form action="..." #postForm=ngForm>
+        <input type="texarea" name="text"   class="form-control input-lg no-border"  rows="2" placeholder="Send me a message..." [(ngModel)]=text required  minlength="6" >
+        <div class="panel-footer my-3  ">
+            <button  type="submit" [disabled]=!postForm.valid class="btn btn-success  pull-right mr-2"  routerLink="/post" (click)='newMessage(text)' >POST</button>
+            <ul class="nav nav-pills p-2">
+                <li><a href="#"><i class="fa fa-user p-2"></i></a></li>
+                <li><a href="#"><i class="fa fa-map-marker p-2"></i></a></li>
+                <li><a href="#"><i class="fa fa-camera p-2"></i></a></li>
+                <li><a href="#"><i class="fa fa-smile-o p-2"></i></a></li>
+            </ul><!-- /.nav nav-pills -->
+        </div><!-- /.panel-footer -->
+    </form>
+</div><!-- /.panel -->
+<ng-template #elseBlock>
+    <div class="form-group input-lg no-border">
+        <div class="card bg-success text-white text-center">
+            <div class="card-body">
+                 message sent successfully !!
+            </div>
+        </div>
+    </div>
+</ng-template>
+<div class="row mt-4">
+    <div class="col-md-6">
+        <div class="panel panel-secondary rounded shadow ">
+            <div class="panel-heading no-border">
+                <div class="pull-left half">
+                    <div class="media">
+                        <div class="media-body alert-secondary mb-2 px-4 mr-1">
+                            <a class="media-heading block mb-0 h4 text-info ">My Joe Project </a>
+                            <span class=" h6 text-secondary"> on 30th July, 2019</span>
+                        </div>
+                </div><!-- /.pull-left -->
+                <div class="pull-right">
+                    <a href="#" class="text-secondary h4"><i class="fa fa-heart"></i> 123</a>
+                </div><!-- /.pull-right -->
+                </div>
+                <div class="clearfix alert-secondary mb-2 "></div>
+            </div><!-- /.panel-heading -->
+            <div class="panel-body no-padding">
+                <img src="./assets/joe.png" alt="..." class="img-responsive full-width img-post3">
+                <div class="inner-all block mt-2">
+                    view all <a href="#">2 comments</a>
+                </div><!-- /.inner-all -->
+                <div class="line no-margin"></div><!-- /.line -->
+                <div class="media inner-all no-margin">
+                    <div class="pull-left">
+                        <img src="./assets/fourquet.png" alt="..." class="img-post2">
+                    </div><!-- /.pull-left -->
+                    <div class="media-body">
+                        <a href="#" class="h4 text-info">Max Fourquet <small>CEO </small></a>
+                        <small class="block text-muted">Particulièrement efficace» est la phrase qui me vient à l’esprit quand je pense à Anthony.
+                        </small>
+                        <em class="text-xs text-muted">Posted on <span class="text-danger">Jul 30, 2019</span></em>
+                    </div><!-- /.media-body -->
+                </div><!-- /.media -->
+                <div class="line no-margin"></div><!-- /.line -->
+                <div class="media inner-all no-margin my-2">
+                    <div class="pull-left">
+                        <img src="./assets/alenda.jpeg" alt="..." class="img-post2">
+                    </div><!-- /.pull-left -->
+                    <div class="media-body">
+                        <a href="#" class="h4 text-info">Anaelle Alenda </a>
+                        <small class="block text-muted">J’ai été particulièrement impressionné par la capacité d'Anthony à traiter même les problématiques les plus difficiles – et avec
+                        le sourire ..</small>
+                        <em class="text-xs text-muted">Posted on <span class="text-danger">Jul 30, 2019</span></em>
+                    </div><!-- /.media-body -->
+                </div><!-- /.media -->
+            </div><!-- /.panel-body -->
+            <div class="panel-footer">
+            </div><!-- /.panel-footer -->
+        </div><!-- /.panel -->
+    </div>
+    <div class="col-md-6">
+        <div class="panel panel-success rounded shadow  ">
+            <div class="panel-heading no-border  alert-secondary mb-2 ">
+                <div class="pull-left half ">
+                    <div class="media">
+                        <div class="media-body alert-secondary mb-2 px-4 mr-1 ">
+                            <a class="media-heading block mb-0 h4 text-info">Anthony Bizien </a>
+                            <span class="text-secondary h6"> on 1st August, 2019</span>
+                        </div>
+                    </div>
+                    <div class="pull-right">
+                        <a href="#" class="text-secondary h4"> <i class="fa fa-heart"></i>42</a>
+                    </div><!-- /.pull-right -->
+                </div><!-- /.pull-left -->
+                
+                <div class="clearfix"></div>
+               
+            </div><!-- /.panel-heading -->
+            <div class="panel-body no-padding">
+                <div class="inner-all block">
+                    <h5>Add me on GitHub! 
+                    <i class="fa fa-github-square  fa-2x "></i>
+                    </h5>
+                   
+                    <p class="ml-1">
+                    GitHub is a website and cloud-based service that helps developers store and manage their code,
+                     as well as track and control changes to their code.<br> Click here=> 
+                    <a href="#" class="btn btn-sm btn-dark ">Link</a>
+                    </p>
+                   
+                </div><!-- /.inner-all -->
+                <div class="inner-all ">
+                    view all <a href="#">3 comments</a>
+                </div>
+            </div><!-- /.panel-body -->
+            <div class="panel-footer no-padding no-border">
+                <div class="media inner-all mt-2">
+                    <div class="pull-left">
+                        <img src="http://bootdey.com/img/Content/avatar/avatar2.png" alt="..." class="img-post2">
+                    </div><!-- /.pull-left -->
+                    <div class="media-body">
+                        <a href="#" class="h4 text-info">Younes Temar</a>
+                        <small class="block text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </small>
+                        <em class="text-xs text-muted">Posted on <span class="text-danger">Dec 08, 2014</span></em>
+                    </div><!-- /.media-body -->
+                </div><!-- /.media -->
+                <div class="line no-margin"></div><!-- /.line -->
+                <div class="media inner-all my-2 ">
+                    <div class="pull-left">
+                        <img src="http://bootdey.com/img/Content/avatar/avatar4.png" alt="..." class="img-post2">
+                    </div><!-- /.pull-left -->
+                    <div class="media-body ">
+                        <a href="#" class="h4 text-info">James Ross</a>
+                        <small class="block text-muted">Quaerat, impedit minus non commodi facere doloribus nemo ea
+                            voluptate nesciunt deleniti.</small>
+                        <em class="text-xs text-muted">Posted on <span class="text-danger">Dec 08, 2014</span></em>
+                    </div><!-- /.media-body -->
+                </div><!-- /.media -->
+                <div class="media inner-all no-margin">
+                    <div class="pull-left">
+                        <img src="http://bootdey.com/img/Content/avatar/avatar7.png" alt="..." class="img-post2">
+                    </div><!-- /.pull-left -->
+                    <div class="media-body">
+                        <a href="#" class="h4 text-info">Max Setting</a>
+                        <small class="block text-muted">Quaerat, impedit minus non commodi facere doloribus nemo ea
+                            voluptate nesciunt deleniti.</small>
+                        <em class="text-xs text-muted">Posted on <span class="text-danger">Dec 08, 2014</span></em>
+                    </div><!-- /.media-body -->
+                </div><!-- /.media -->
+                <div class="line no-margin"></div><!-- /.line -->
+            </div><!-- /.panel-footer -->
+        </div><!-- /.panel -->
+    </div>
+</div>

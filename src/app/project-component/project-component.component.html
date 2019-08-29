@@ -1,0 +1,9 @@
+<div class="  mt-2 d-flex flex-wrap px-auto ">
+    <div *ngFor="let project of projectArray | keyvalue" class="card my-3 mx-3 panel panel-success rounded shadow" style="width: 21rem;">
+        <img class="card-img-top" src="{{project.value.pic}}" alt="Card image cap">
+        <div class="card-body mt-2">
+            <h5 class="card-title">{{project.key}}</h5>
+            <p class="card-text">{{project.value.descrip}}.</p>
+        </div>
+    </div>
+</div>
