@@ -6,15 +6,15 @@
     <img class="card-img-top" src="./assets/light.png" alt="Card image cap">
     <div class="card-body mt-2">
         <h5 class="card-title">FrontSkills</h5>
-        <p class="card-text">blabla.</p>
+        <p class="card-text">My main front-skills.</p>
     </div>
 </div>
     <div *ngFor="let front of frontlist | keyvalue"  class="card my-3 mx-3 panel panel-success rounded shadow"
         style="width: 9rem;">
         <img class="card-img-top" src="{{front.value.pic}}" alt="Card image cap">
         <div class="card-body mt-2">
-            <h5 class="card-title">{{front.key}}</h5>
-            <p class="card-text">{{front.value.descrip}}.</p>
+            <h5 class="card-title">{{front.value.title}}</h5>
+            <p class="card-text">{{front.value.content}}.</p>
         </div>
     </div>
 </div>

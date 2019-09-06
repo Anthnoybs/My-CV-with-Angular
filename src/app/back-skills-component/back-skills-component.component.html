@@ -7,15 +7,15 @@
         <img src="./assets/dark.png" alt="image de validation" class="card-img-top ">
         <div class="card-body mt-2">
             <h5 class="card-title">BackSkills</h5>
-            <p class="card-text">blabla.</p>
+            <p class="card-text">My main BackSkills.</p>
         </div>
     </div>
     <div *ngFor="let back of backlist | keyvalue" class="card my-3 mx-3 panel panel-success rounded shadow"
         style="width: 9rem;">
         <img class="card-img-top" src="{{back.value.pic}}" alt="Card image cap">
         <div class="card-body mt-2">
-            <h5 class="card-title">{{back.key}}</h5>
-            <p class="card-text">{{back.value.descrip}}.</p>
+            <h5 class="card-title">{{back.value.title}}</h5>
+            <p class="card-text">{{back.value.content}}.</p>
         </div>
     </div>
 </div>

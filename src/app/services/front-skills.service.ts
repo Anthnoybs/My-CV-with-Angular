@@ -8,6 +8,6 @@ export class FrontSkillsService {
   constructor(private httpClient: HttpClient) {}
     getFrontFromServer() {
       return this.httpClient
-        .get<any[]>('https://cvproject-e6e2a.firebaseio.com/frontSkils.json');
+        .get<any[]>('http://localhost:3000/notes/front');
     }
 }

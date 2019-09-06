@@ -28,7 +28,7 @@ import { BehaviorSubject } from 'rxjs';
   }
   getProjectsFromServer() {
     return this.httpClient
-      .get<any[]>('https://cvproject-e6e2a.firebaseio.com/project.json');
+      .get<any[]>('http://localhost:3000/notes/project');
   }
   changeMessage() {
     this.done.next(1);

@@ -9,7 +9,7 @@ export class BackSkillsService {
   constructor(private httpClient: HttpClient) { }
   getBackFromServer() {
     return this.httpClient
-      .get<any[]>('https://cvproject-e6e2a.firebaseio.com/backSkills.json');
+      .get<any[]>('http://localhost:3000/notes/back');
   }
 
 }
